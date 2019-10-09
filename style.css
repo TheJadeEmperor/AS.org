@@ -1,0 +1,2258 @@
+/*
+Theme Name: Screening
+*/
+
+body {
+	color: #333333;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+}
+
+/* popup over lay disable */
+.sgpb-theme-1-overlay {
+	display: none;
+}
+
+/* nav_bar includes logo & main menu */
+.nav_bar {
+    width: 70%;
+	height: 60px;
+    margin: auto;
+}
+
+.as_org_logo {
+	float: left;
+}
+
+.as_menu_d {
+	float: right;
+}
+
+.nav_menu {
+	list-style-type: none;
+	float: left;
+}
+
+.main_menu_item {
+	float: left;
+	color: #37383A;
+	height: 28px;
+	width: 124px;
+	color: #333333;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.main_menu_item a {
+	text-decoration: none;
+	color: #37383A;
+}
+
+.main_menu_item a:visited, .main_menu_item a:hover {
+	color: #37383A;
+}
+
+.close_button {
+	float: right;
+	margin-top: 15px;
+}
+
+/* Mobile Menu */
+#mobileMenu {
+	display: none;
+}	
+
+.strat_menu_mobile {
+	display: none;
+}
+
+/* All top level elements */
+p {
+	margin-top: 0px;
+}
+
+.as_footer {
+	height: 103px;
+	padding: 15px;
+	background-color: #F2F2F0;
+}
+
+.as_footer_text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+}
+
+.as_footer_text a {
+	color: #851A9B;
+}
+
+.home_footer {
+	background-color: #F2F2F0;
+	color: #333333;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	padding: 31px;
+}
+
+.home_footer_logo img {
+	height: 50px;
+	width: 202px;
+}
+
+.home_footer_text {
+	width: 70%;
+	text-align: center;
+	margin: 31px auto;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}
+
+div {
+	text-align: center;
+} 
+
+.clear {
+	clear: both;
+}
+
+
+/* Results & What's Next Tabs */
+.line {
+	box-sizing: border-box;
+	height: 2px;
+	width: 100%;
+	border: 1px solid #979797;
+}
+
+.tab_both {
+	margin: auto;
+	width: 200px;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+.tab_left {
+	float: left;
+}
+
+.tab_right {
+	float: right;
+}
+
+.tab_left img {
+	height: 28px;
+	width: 25px;
+}
+
+.tab_right img {
+	height: 28px;
+	width: 22px;
+}
+
+.tab_text_not {
+	color: #999999;
+}
+
+.tab_text_active {
+	color: #333333;
+}
+
+
+
+/* Button Answers for Q-1 & Page-Plan */
+.button_answer, .button_plan {
+	width: 620px;
+	border: 1px solid #C5C1C1;
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	text-align: left;
+	cursor: pointer;
+	margin: 0px auto 13px auto;
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 10px 17px;
+}
+
+.button_answer:hover, .button_plan:hover {
+	border: 1px solid #851A9B;
+}
+
+.button_list {
+}
+
+
+/* Fonts across all pages */
+.as_copy {
+	text-align: center;
+	color: #333333;
+}
+
+.small {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.medium {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.large {
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+a {
+	color: #851A9B;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.home_disclaimer a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.purple {
+	color: #851A9B;
+}
+
+.box_purple {
+	background-color: #851A9B;
+	color: #FFFFFF;
+}
+
+.box_blue {
+	background-color: #1E3D6E;
+	color: #FFFFFF;
+}
+
+.box_teal {
+	background-color: #8AE4E2;
+}
+
+.box_gray {
+	color: #333333;
+	background-color: #F2F2F0;
+}
+
+.box_desktop_a {
+	height: 108px;
+	width: 240px;
+}
+
+.box_desktop_b {
+	height: 183px;
+	width: 240px;
+}
+
+.box_text {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: center;
+}
+
+.box_title {
+	color: #FFFFFF;
+	font-size: 60px;
+}
+
+.arrow_div {
+	margin: 40px auto 100px auto;
+	width: 40%;
+}
+
+.image_arrow_left {
+	float: left;
+}
+
+.image_arrow_right {
+	float: right;
+}
+
+/* Screening Home Page */
+.home_full_width {
+	background-color: #1E3D6E;
+	padding: 20px;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 44px;
+	text-align: center;
+}
+
+.home_people_text {
+	margin: 30px auto 0 auto;
+	width: 70%;
+	color: #333333;
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 32px;
+	text-align: center;
+}
+
+.home_image_people {
+	margin: 30px 0px 40px 0px;
+}
+
+.home_begin {
+	padding: 56px 0 40px 0;
+}
+
+.home_begin * {
+	text-align: center;
+}
+
+.home_begin_text {
+	width: 70%;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 32px;
+	margin: 0px auto 47px auto;
+}
+
+.home_disclaimer {
+	width: 60%;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 65px auto 0px auto;
+	text-align: left;
+}
+
+#button_home {
+	cursor: pointer;
+}
+
+.button_for_loved_one {
+	height: 40px;
+	width: 215px;
+	margin-right: 19px;
+	border: 1px solid #FFFFFF;
+	border-radius: 30px;
+	background-color: #851A9B;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.button_for_you {
+	height: 40px;
+	width: 215px;
+	border: 1px solid #979797;
+	border-radius: 30px;
+	background-color: #FFFFFF;
+	color: #851A9B;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+
+.about_us_title {
+	width: 70%;
+	margin: 68px auto 12px auto;
+	color: #333333;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.about_us_explain {
+	width: 70%;
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0px auto 60px auto;
+	text-align: left;
+}
+
+/* Q-1 */
+.welcome_title, .welcome_text, .welcome_command, .welcome_question {
+	margin: auto;
+}
+
+.welcome_title {
+	height: 40px;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+.welcome_text {
+	width: 70%;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 34px;
+}
+
+.welcome_command {
+	height: 32px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+	margin-bottom: 23px;
+}
+
+.welcome_question {
+	width: 90%;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 55px;
+	margin-bottom: 24px;
+}
+
+/* Q-2 */
+
+.F {
+	margin: 0px 20px 0px 0px;
+	float: left;
+	padding-top: 10px;
+}
+
+.M {
+	margin: 0px 0px 0px 20px;
+	float: right;
+	padding-top: 25px;
+}
+
+.gender_div {
+	width: 340px;
+	margin: 0px auto 45px auto;
+}
+
+.gender_icon {
+	cursor: pointer;
+}
+
+.gender_icon {
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 140px;
+	width: 140px;
+	border: 1px solid #851A9B;
+	background-color: #FFF;
+}
+
+.q2_as_title {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 40px;
+	margin-top: 35px;
+}
+
+.q2_as_copy {
+	width: 40%;
+	height: 60px;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 0px auto 39px auto;
+}
+
+.q2_as_subtitle {
+	height: 32px;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+	margin-bottom: 12px;
+}
+
+.q2_as_gender {
+	width: 40%;
+	margin: 0px auto 20px auto;
+}
+
+.q2_as_gender a {
+	text-decoration: none;
+}
+
+#zipCode, #age {
+	border: none;
+	border-bottom: 1px solid gray;
+	height: 23px;
+	width: 300px;
+	color: #999999;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+}
+
+#zipCode {
+	margin-bottom: 49px;
+}
+
+
+/* page_q3 */
+.page_q3 as_copy {
+	margin-bottom: 26px;
+}
+
+.standard_drink_display {
+	width: 50%;
+	margin: 0px auto 24px auto;
+}
+
+
+.standard_drink_beer, .standard_drink_spirit {
+	display: inline-block;
+}
+
+.standard_drink_container {
+	width: auto;
+	margin: 15px auto 32px auto;
+	vertical-align: bottom;
+}
+
+.standard_drink_container td {
+	text-align: center;
+	width: 150px;
+}
+
+/* .page_results */
+
+.page_results {
+	width: 70%;
+	margin: auto;
+}
+
+.page_results .three_box {
+	margin: 0 auto 65px auto; 
+}
+
+.box_left, .box_middle, .box_right {
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+	padding: 28px 28px 50px 28px;
+}
+
+.box_left {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.box_right {
+	float: right;
+	margin-bottom: 20px;
+}
+
+.box_middle {
+	margin: auto; 
+	text-align: center;
+}
+
+.page_results .image_standard_drink {
+	margin-bottom: 30px;
+}
+
+.page_results .results_binge_explain {
+	background-color: #F2F2F0;
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	margin: 0px auto 20px auto;
+	padding: 30px 90px;
+}
+
+.page_results .results_drinking_peers {
+	margin-bottom: 20px;
+}
+
+.page_results .image_peers {
+	margin-bottom: 30px;
+}
+
+.page_results .percentile {
+	margin-bottom: 30px;
+}
+
+.page_results .percentile_copy {
+	width: 600px;
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	margin: 0px auto 33px auto; 
+}
+
+.results_question_surprised {
+	margin-bottom: 16px;
+}
+
+.results_surprised_explain {
+	margin: 0px auto 33px auto;
+	text-align: left;
+}
+
+.results_facts_block {
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+	padding: 28px 28px 50px 28px;
+}
+
+.results_facts_gender {
+	margin-bottom: 65px;
+}
+
+.results_facts_block:first-child {
+	margin-right: 20px;
+}
+
+.results_facts_number {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 70px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.results_facts_copy {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 25px;
+	text-align: center;
+}
+
+.results_facts_text {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.results_safe_drinking {
+	padding: 29px;
+	width: 510px;
+	margin: 0px auto 16px auto;
+}
+
+.results_recommend {
+	margin: 0px auto 16px auto;
+	text-align: left;
+}
+
+.results_risk_score, .results_risk_copy {
+	margin: auto;
+}
+
+.results_risk_score {
+	padding: 12px 24px;
+}
+
+.results_risk_copy {
+	margin-bottom: 59px;
+	padding: 24px;
+}
+
+.results_risk_score > div, .results_risk_copy * {
+	text-align: left;
+}
+
+.nextButton {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 32px;
+	text-align: center;
+	padding: 7px 32px;
+	border-radius: 30px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	border-style: solid;
+}
+
+.binge_copy {
+	margin: auto;
+}
+
+/* Page Plan */
+
+.plan_consider {
+	margin: 0px auto 40px auto;
+	padding: 29px 24px;
+	width: 70%;
+}
+
+.image_calendar {
+	margin: 15px 0px 20px 0px;
+}
+
+.plan_30_days {
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.button_1_10 {
+	margin: 0px -1px;
+	height: 40px;
+	width: 34px;
+	border: 1px solid #C5C1C1;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+	background-color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0;
+}
+
+.button_1_10:first-child {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.button_1_10:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.plan_commit_div {
+	width: 348px;
+	margin: 0px auto 35px auto;
+}
+
+.plan_commit_1 {
+	float: left;
+}
+
+.plan_commit_10 {
+	float: right;
+}
+
+/* Page Quit */
+.quit_title {
+	padding: 41px;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+.quit_title, .quit_gray_box_copy {
+	width: 70%;
+	margin: auto;
+}
+
+.quit_gray_box_copy {
+	padding: 41px;
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 36px;
+	text-align: left;
+}
+
+.cutback_title {
+	color: #333333;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+.cutback_white_block_text {
+	width: 60%;
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0px auto 40px auto;
+}
+
+.cutback_pink_block_text {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+
+.cutback_bullet_text ul {
+	margin-top: 0px;
+}
+
+.cutback_pink_block_text, .cutback_bullet_text {
+	width: 70%;
+	padding: 26px;
+	margin: 0px auto;
+}
+
+.cutback_bullet_text {
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+	margin-bottom: 150px;
+}
+
+/* Tips for Cutting Back */
+
+.cutback_explain_text {
+	width: 80%;
+	color: #333333;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 0px auto 40px auto;
+}
+
+.cutback_strategies {
+	width: 60%;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+	margin: 0px auto 25px auto;
+}
+
+.cutback_text, .cutback_headline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cutback_headline {
+	width: 199px;
+	margin: 0px 15px 20px 0px;
+	text-align: left;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	padding: 12px 22px;
+}
+
+.cutback_headline a {
+	color: #FFFFFF;
+}
+
+.cutback_text {
+	text-align: left !important;
+	width: 400px;
+}
+
+.cutback_text p {
+	margin-top: 0px;
+}
+
+.strat_container {
+	margin-bottom: 40px;
+}
+
+
+.image_pencil {
+	margin-bottom: 12px;
+}
+
+/* Cutback Online Support */
+.image_cutback_online_support {
+	margin-bottom: 12px;
+}
+
+.cutback_copy, .cutback_guidelines {
+	margin: 0 auto;
+}
+
+.cutback_copy {
+	width: 60%;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.cutback_guidelines {
+	width: 50%;
+	color: #333333;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 58px;
+}
+
+.online_support .line {
+	margin-bottom: 42px;
+}
+
+.online_logo {
+	float: left;
+	width: 35%;
+	text-align: left;
+	margin-bottom: 38px;
+}
+
+.online_logo img {
+	max-width: 220px;
+	margin-bottom: 15px;
+}
+
+.online_logo * {
+	text-align: left;
+}
+
+.online_copy {
+	float: right;
+	width: 60%;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: left;
+	margin: 0px 30px 38px 0px;
+}
+
+p {
+	margin-top: 0px;
+}
+
+.online_url {
+	color: #851A9B;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.online_paid_programs_title {
+	color: #333333;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.online_support .line {
+	margin-bottom: 40px;
+}
+
+.online_paid_programs_title {
+	margin-bottom: 30px;
+}
+
+/* Strategy Alcohol Disorder */
+.strategy_explain_text, .strategy_disorder_title, .strategy_disorder_text, .strategy_aud_text, .strategy_questions_bullet_list {
+	width: 70%;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.strategy_explain_text {
+	color: #333333;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 17px;
+	margin-bottom: 38px;
+}
+
+.strategy_disorder_title {
+	color: #333333;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 23px;
+}
+
+.strategy_disorder_text {
+	color: #333333;
+	font-size: 16px;
+	line-height: 24px;	
+	margin-bottom: 23px;
+}
+
+.strategy_aud_text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 12px 15px;
+}
+
+.strategy_questions_bullet_list {
+	color: #333333;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+	padding: 18px 15px;
+}
+
+.strategy_conclusion_text {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+
+/* Stop Page */
+.page_stop {
+	margin: 0 auto;
+	width: 60%;
+}
+
+/* Page Treatment */
+
+.treatment_div {
+	padding: 35px 31px 20px 31px;
+	margin: 0px auto 40px auto;
+	width: 75%;
+}
+
+.treatment_intro {
+	margin-bottom: 25px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.treatment_link a {
+	margin: 15px;
+	text-decoration: none;
+}
+
+.image_treatment, .image_medicine {
+	margin-bottom: 11px;
+}
+
+.treatment_title_1 {
+	margin-bottom: 25px;
+}
+
+.treatment_types_of_treatment, .treatment_types_of_medication {
+	text-align: left;
+	margin: 0px auto 30px auto;
+	width: 75%;
+}
+
+
+/* Info-Drinking-1 */
+
+.info_title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 23px;
+}
+
+.info_drink {
+	text-align: left;
+	margin: 0px auto 30px auto;
+	width: 70%;
+}
+
+	.info_drink .image_drink {
+		display: inline-block;
+		margin-right: 25px;
+		text-align: center;
+		width: 60px;
+		vertical-align: top;
+	}
+
+	.info_drink .info_beer_copy {
+		display: inline-block;
+		text-align: left;
+		width: 70%; 
+		vertical-align: top;
+	}
+
+.info_niaaa_link {
+	margin: 50px 0px 40px 0px;
+}
+
+.info_drink #image_wine {
+	width: 30px;
+}
+
+.info_drink #image_spirits {
+	width: 28px;
+}
+
+
+.info_moderated_drinking_div {
+	padding: 29px;
+	width: 70%;
+	margin: 0px auto 16px auto;
+}
+
+.info_moderated_drinking_image  {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.info_moderated_drinking_text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	width: 50%;
+	padding-top: 50px;
+}
+
+.info_facts_block {
+	display: inline-block;
+	vertical-align: top;
+	padding: 35px 35px;
+
+}
+
+.box_purple.info_facts_block {
+	margin-right: 15px;
+}
+
+.info_facts_number {
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 75px;
+}
+
+
+.info_facts_copy {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 20px;
+	width: 196px;
+	height: 80px;
+}
+
+
+.first .info_facts_block {
+	height: 160px;
+}
+
+.first .info_facts_copy {
+	padding-top: 30px;
+}
+
+.last .results_facts_gender {
+	margin-bottom: 65px;
+}
+
+
+.info_long_text {
+	text-align: left;
+	margin: auto;
+	width: 70%;
+}
+
+.info_facts {
+	margin: 12px auto 9px auto;
+	width: 50%;
+}
+
+.info_intro {
+	margin-bottom: 22px;
+	margin: auto;
+	width: 70%;
+}
+
+.results_facts_gender .info_3 {
+	margin-bottom: 44px;
+}
+
+.info_explain_text {
+	margin: 0px auto 37px auto;
+	width: 70%;
+	text-align: left;
+}
+
+.info_3 .info_facts_block {
+	padding-bottom: 40px;
+}
+
+
+.info_3 .info_title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 23px;	
+	margin-bottom: 13px;
+}
+
+.info_3 .info_copy {
+	text-align: left;
+	margin: 0px auto 40px auto;
+	width: 70%;
+}
+
+
+.info_liver_disease_title, .info_liver_disease_div, .info_disease_div {
+	margin: 0 auto;
+}
+
+.info_liver_disease_title {
+	padding: 40px;
+	text-align: left;
+	width: 70%;
+}
+
+.info_liver_disease_div {
+	padding: 30px 40px;
+	width: 70%;
+}
+
+.info_liver_disease_div * {
+	color: #FFFFFF;
+}
+
+.info_liver_disease_facts {
+	font-size: 60px;
+	line-height: 75px;
+}
+
+.info_disease_div {
+	width: 70%;
+	padding: 20px 40px;
+	margin-bottom: 16px;
+}
+
+.info_disease_div * {
+	text-align: left;	
+}
+
+
+.info_3 .line {
+	margin: 25px 0px;	
+}
+
+.info_consult_doc, .info_doc_div {
+	padding: 25px;
+	width: 72%;
+	margin: auto;
+}
+
+.info_consult_doc_copy {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.info_doc_div  {
+	margin-bottom: 93px;
+	text-align: left;
+}
+
+.info_doc_text {
+	text-align: left;
+}
+
+.info_3 .info_image {
+	margin-bottom: 12px;
+}
+
+/* Info - Across the Lifespan */
+
+.info_4 .image_beer {
+	margin-bottom: 28px;
+}
+
+
+.info_under_21_text {
+	width: 70%;
+	margin: auto;
+}
+
+.info_under_21_title, .info_under_21_text {
+	margin-bottom: 15px;
+}
+
+.info_short_term_div, .info_long_term_div {
+	width: 70%;
+	margin: auto; 
+	padding: 25px 40px;
+	margin-bottom: 15px;
+}
+
+.info_short_term_div *, .info_long_term_div * {
+	text-align: left;
+}
+
+.info_short_term_title, .info_long_term_title {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;	
+}
+
+.info_short_term, .info_long_term_text {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.info_long_term_source {
+	margin-bottom: 30px
+}
+
+.image_drinking_pregnancy {
+	margin-bottom: 15px;
+}
+
+.info_drinking_pregnancy_title {
+	margin-bottom: 15px;
+}
+
+.info_birth_defects_text {
+	text-align: left;
+	line-height: 24px;
+	margin: auto;
+}
+
+.info_over_50_text, .info_drinking_pregnancy_text  {
+	text-align: left;
+	line-height: 24px;
+	width: 70%;
+	margin: auto;
+}
+
+.info_drinking_pregnancy_text {
+	margin-bottom: 18px;
+}
+
+.info_birth_defects_div {
+	margin: auto;
+	width: 70%;
+	padding: 24px 40px;
+	margin-bottom: 12px;
+}
+
+.info_birth_defects_source {
+	margin-bottom: 47px;
+}
+
+.info_4 .image_wine {
+	margin-bottom: 12px;
+}
+
+.info_over_50_text {
+	margin-bottom: 50px;
+}
+
+.info_birth_defects_title, .info_over_50_title {
+	margin-bottom: 12px;
+}
+
+.info_over_50_text {
+	margin-bottom: 50px;
+}
+
+/* Standard drinks */
+
+.standard_page_title {
+	margin-bottom: 24px;
+}
+
+.standard_box {
+	padding: 45px;
+	margin: auto;
+	width: 70%;
+	margin-bottom: 26px;
+}
+
+.standard_count_title {
+	margin-bottom: 23px;
+}
+
+.standard_drink_div {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+	width: 180px;
+}
+
+
+.standard_footnote {
+	margin-bottom: 50px;
+}
+
+.standard_drinking_image, .standard_drinking_copy {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+}
+
+.standard_drinking_copy {
+	width: 300px;
+}
+
+.standard_drinking_copy div {
+	text-align: left;
+}
+	
+.standard_drinking_image .image_malt_liquor {
+	width: 35px;
+}
+
+.standard_drinking_image .image_wine {
+	width: 40px;
+}
+
+.standard_drinking_div {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+}
+
+.standard_drinking_row {
+	margin-bottom: 40px;
+}
+
+.standard_drinking_row:nth-child(2) {
+	margin-bottom: 60px;
+}
+
+/* Gender Page */
+.gender_copy {
+	width: 70%;
+	margin: 20px auto 50px auto;
+	text-align: left;
+}
+
+/* Study Page */
+
+.study_image_bg {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.study_buttons {
+	margin-bottom: 150px;
+}
+
+.study_buttons form {
+	display: inline-block;
+}
+
+.study_buttons input[type="submit"] {
+	cursor: pointer;
+	box-sizing: border-box;
+	height: 94px;
+	width: 94px;
+	border: 1px solid #C5C1C1;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+
+
+/* Strategy Menu */
+.strat_menu {
+	position: absolute;
+	left: 5%;
+	width: 28%;
+	display: block;
+}
+
+.strat_menu p {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.strat_container {
+	display: block;
+	margin-left: 38%;
+	width: 58%;
+}
+
+.strat_menu a {
+	height: 26px;
+	color: #333333;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25px;	
+	text-decoration: none;
+}
+
+.strat_menu a.sub_item {
+	font-weight: 200;
+}
+
+.strat_menu a.highlight {
+	color: #851A9B;
+}
+
+.all_strategies_div {
+	margin-bottom: 100px;
+}
+
+.view_all_strategies {
+	display: none;
+}
+
+.strat_menu_mobile, .strat_extra_menu {
+	display: none;
+}
+
+.progress_bar {
+	margin: 0px 30% 20px 30%;
+}
+
+.close_button img {
+	width: 35px;
+}
+
+#rightArrow {
+	margin-right: 12%;
+} 
+
+.hideThis {
+	display: none;
+}
+
+.privacy_content {
+	width: 70%;
+	text-align: left;
+	margin: 0 auto 50px auto;
+}
+
+@media screen and (max-width: 767px) {
+	
+	div.clear { 
+		height: unset;
+		width: unset;
+	} 
+	
+	.nav_bar {
+		width: 100%;
+		overflow: hidden;
+		position: fixed;
+		background-color: #FFFFFF;
+		top: 0;
+	}
+	
+	.container {
+		margin-top: 60px;
+	}
+	
+	/* Hide desktop menu */
+	.as_menu_d {
+		display: none;
+	}
+	
+	/* Hambuger Menu */	
+	.as_menu_m {
+		float: right;
+		display: inline-block;
+		cursor: pointer;
+		margin: 10px 20px 0px 0px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	  transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	.progress_bar {
+		margin: 0px 5% 20px 5%;
+	}
+	
+	.close_button {
+		float: right;
+		margin: 10px 10px 0px 0px;
+	}
+	
+	.arrow_div {
+		width: 90%;
+	}
+	
+	.container {
+		z-index: 1;
+	}
+	
+	/* Mobile Menu */
+	.sideNav {
+		height: 100%;
+		margin-top: 60px;
+		right: 0;
+		background-color: #FFF;
+		border-top: 1px solid #333333;
+		transition: 0.5s;
+		padding-top: 60px;
+		display: block !important;
+	}
+	
+	#mobileMenu a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #333333;
+		display: block;
+		transition: 0.3s;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	#mobileMenu a:hover {
+		color: #f1f1f1;
+	}
+
+	.view_all_stratgies {
+		display: block;
+	}
+
+	.strat_menu {
+		display: none;
+	}
+	
+	.strat_menu_mobile, .strat_extra_menu {
+		display: block;
+	}
+
+	.strat_menu_mobile {
+		display: block;
+		padding: 6px 21px;
+	}
+	
+	.strat_menu_m a {
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+	
+	.strat_extra_menu {
+		margin: 12px auto 40px auto;
+		width: 90%;
+	}
+	
+	.strat_extra_item {
+		text-align: left;
+		margin: 12px auto;
+	}
+	
+	.strat_extra_item a {
+		color: #828282;
+	}	
+	
+	.highlight a {
+		color: #851A9B;
+	}
+	
+	/* All Mobile Pages */
+	.large {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	
+	.medium {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	.small {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	.footnote {
+		font-size: 12px;
+		line-height: 15px;
+	}
+	
+	/* Home Screen */
+	.home_image_people {
+		width: 100%;
+	}
+	
+	.home_full_width {
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 31px;
+		text-align: center;
+		padding: 48px 29px;
+	}
+	
+	.home_people_text {
+		font-size: 16px;
+		line-height: 20px;
+		width: 80%;
+		margin: 30px auto 0px auto;
+	}
+	
+	.home_image_people {
+		width: 100%;
+	}
+	
+	.home_begin {
+		padding: 26px 31px;
+	}
+	
+	.home_begin_text {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 24px;
+		width: 90%;
+	}
+	
+	.home_disclaimer {
+		font-size: 16px;
+		letter-spacing: 0.1px;
+		line-height: 20px;
+		width: 90%;
+		margin-top: 34px;
+	}
+	
+	.button_div input {
+		margin: 0 0 10px 0;
+	}
+	
+	.about_us_title {
+		font-size: 20px;	
+		line-height: 25px;
+	}
+	
+	.about_us_explain {
+		font-size: 16px;
+		line-height: 24px;
+		text-align: left;
+	}
+	
+	/* Page Q-1A */
+	
+	.welcome_title {
+		font-size: 18px;
+		line-height: 20px;		
+	}
+
+	.welcome_text, .welcome_command {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.welcome_question {
+		font-size: 20px;
+		line-height: 25px;
+		margin: 24px auto 12px auto;
+	}
+	
+	.button_answer {
+		width: 90%;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	/* Page Q-2 */
+	
+	.q2_as_title, .q2_as_copy {
+		font-size: 16px;	
+		line-height: 20px;
+	}
+
+	.q2_as_copy {
+		width: 90%;
+		margin-bottom: 23px;
+	}
+
+	.q2_as_subtitle {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.q2_as_gender {
+		font-size: 14px;
+		line-height: 18px;
+		width: 90%;
+	}
+	
+	.gender_icon {
+		height: 120px;
+		width: 120px;
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+	}
+	
+	.F img {
+		width: 50px;
+	}
+	
+	.M img {
+		width: 60px;
+	}
+	
+	.zip_code, .age {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	/* Q3-Q6 */
+	.screening_copy {
+		font-size: 20px;	
+		line-height: 25px;
+		width: 90%;
+		margin: auto;
+	}
+	
+	.standard_drink_display {
+		font-size: 16px;	
+		line-height: 20px;
+		width: 90%;
+	}
+	
+	.standard_drink_container {
+		width: 95%;
+	}
+	
+	.study_image_bg img {
+		width: 100%;
+	}
+	
+	/* Page Results */
+	.page_results {
+		width: 90%;
+		margin: auto;
+	}
+	
+	.box_left, .box_middle, .box_right {
+		float: none;
+		margin-bottom: 30px;
+	}
+
+	
+	.page_results .results_dpw_hdd {
+		width: 90%;
+		font-size: 20px;
+		line-height: 25px;
+	}
+	
+	.page_results .image_standard_drink {
+		width: 90%;
+	}
+	
+	.page_results .image_standard_drink img {
+		width: 100px;
+	}
+	
+	.page_results .binge_drinking_copy {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	
+	.page_results .results_binge_explain {
+		font-size: 16px;
+		line-height: 24px;
+		width: unset;
+		padding: 15px 26px;
+		text-align: left;
+		margin-bottom: 31px;
+	}
+	
+	.page_results .percentile_copy {
+		width: unset;
+	}
+	
+	.results_surprised_explain {
+		width: unset;
+	}
+	
+	.results_facts_block:first-child {
+		margin: 0 0 20px 0;
+	}
+	
+	.results_facts_gender {
+		margin-bottom: 20px;
+	}
+	
+	.results_safe_drinking, .results_recommend, .results_risk_score, 
+	.results_risk_copy {
+		width: unset;
+	}
+	
+	/* Page-Plan */
+	.plan_consider {
+		margin: 0px auto 40px auto;
+		padding: 21px 24px;
+		width: 90%;
+	}
+	
+	.button_plan, .buttons_1_10 {
+		width: 90%;
+	}
+	
+	.buttons_1_10 input[type="submit"] {
+		width: 30px;
+	}
+	
+	
+	.plan_we_can_help {
+		margin-top: 15px;
+	}
+	
+	.plan_testing_1, .plan_testing_2, .plan_30_days  {
+		line-height: 25px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.plan_testing_1 {
+		font-size: 14px;
+	}
+	
+	.plan_testing_2 {
+		font-size: 20px;
+	}
+	
+	.as_footer {
+		height: unset;
+	}
+	
+	.quit_title , .quit_gray_box_copy{
+		width: 90%;
+	}
+	
+	/* Strategy Cutback */
+	.strat_container {
+		margin: 20px auto 0px auto;
+		width: 90%;
+	}
+	
+	.cutback_explain_text {
+		width: unset;
+	}
+	
+	.cutback_strategies {
+		width: unset;
+	}
+	
+	.cutback_headline {
+		width: 90%;
+		margin-bottom: 17px;
+		padding: 29px 15px;
+	}
+	
+	.cutback_text {
+		width: 90%;
+	}
+	
+	.info_drink .info_beer_copy {
+		width: 67%;
+	}
+	
+	
+	/* Strategy Reduce Drinking aka Menu Page */
+	
+	.menu_page {
+		width: 90%;
+		margin: 0 auto 50px auto;
+	}
+	
+	.menu_page_div {
+		margin: 33px auto 26px auto;
+		text-align: left;
+	}
+	
+	.menu_page_title, .image_left_menu {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.image_left_menu img {
+		width: 48px;
+	}
+	
+	.menu_page_title {
+		width: 60%;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px;
+	}
+
+	.menu_page_item {
+		margin: 17px 0px;
+	}
+	
+		.menu_page_item a {
+			color: #851A9B;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 25px;
+		}
+	
+		.menu_page_item a, .image_menu_arrow {
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.menu_page_item a {
+			text-align: left;
+			width: 80%;
+		}
+	
+	.image_menu_arrow img {
+		width: 25px;;
+	}
+	
+	/* Strategy Use Disorder */
+	.strategy_explain_text, .strategy_disorder_title, .strategy_disorder_text, .strategy_aud_text, .strategy_questions_bullet_list	{
+		width: 90%;
+	}
+	
+	.strategy_questions_bullet_list {
+		margin-bottom: 43px;
+	}
+	
+	.cutback_copy, .cutback_guidelines, .online_copy {
+		width: 90%;
+	}
+	
+	.online_logo, .online_copy {
+		float: none;
+		width: 90%;
+		margin: 0px auto 38px auto;
+	}
+	
+	.standard_box {
+		width: 90%;
+	}
+	
+	.standard_drink_div {
+		margin: 0px auto 20px auto;
+	}
+	
+	.standard_drinking_div {
+		margin: 0px 0px 30px 0px;
+	}
+	
+	.standard_footnote {
+		text-align: left;
+		width: 90%;
+	}
+	
+	/* Info Drinking 1 & 2 */
+	.info_moderated_drinking_div {
+		width: unset; 
+		padding: 20px;
+	}
+	
+		.info_moderated_drinking_image {
+			width: 47%;
+		}
+		
+			.info_moderated_drinking_image img {
+				width: 80%;
+			}
+			
+		.info_moderated_drinking_text {
+			padding-top: 0px;
+		}
+		
+	.info_facts_block, .first .info_facts_block {
+		width: unset;
+		height: unset;
+		margin-bottom: 30px;
+	}
+	
+	.info_long_text {
+		margin-bottom: 50px;
+		width: 90%;
+	}
+	
+	/* Info Drinking 3 & 4 */
+	.info_intro {
+		text-align: left;
+		width: 90%;
+	}
+	
+	.info_liver_disease_title, .info_liver_disease_div, .info_disease_div, .info_consult_doc, .info_doc_div {
+		width: 90%;
+	}
+	
+	.info_under_21_text, .info_short_term_div, .info_long_term_div, .info_birth_defects_text, .info_over_50_text, .info_drinking_pregnancy_text, .info_birth_defects_div, .info_birth_defects_source
+	{
+		text-align: left;
+		width: 90%;
+	}
+	
+	.info_birth_defects_source {
+		 word-wrap: break-word;
+	}
+	
+	.treatment_div, .treatment_title_1 {
+		width: 90%;
+	}
+	
+	.treatment_types_of_treatment, .treatment_types_of_medication {
+		width: 90%;
+	}
+	
+	.view_all_strategies {
+		display: block;
+		float: left;
+		background-color: #FFFFFF;
+		color: #851A9B;
+		border: none;
+		margin: 20px 0 0 8%;
+	}
+	
+	#rightArrow {
+		margin-right: 8%;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.nav_bar {
+		width: 80%;
+	}
+	
+	.home_image_people {
+		width: 100%;
+	}	
+}
+
+/* mobile only */
+@media screen and (max-width: 420px) {
+	.info_drink {
+		width: 95%;
+	}
+	
+	.box_purple.info_facts_block {
+		margin-right: 0;
+	}
+	
+	.button_1_10 {
+		width: 31px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	
+	.plan_commit_div {
+		width: 310px;
+	}
+}
+
+
+
+/* HTML Forms */
+
+/* hide number arrows for zipcode */
+#zipCode::-webkit-outer-spin-button,
+#zipCode::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#zipCode {
+    -moz-appearance:textfield;
+}
+
+/* hide number arrows for age */
+#age::-webkit-outer-spin-button,
+#age::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#age {
+    -moz-appearance:textfield;
+}
+
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* +/- buttons for number fields */
+.plus_minus_button {
+	border-radius: 50%;
+	border: none;
+	color: #FFFFFF;
+	background-color: #87179C;
+	font-family: san-serif; 
+	font-weight: 600;
+	width: 40px;
+	height: 38px;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.div_minus, .div_plus {
+	cursor: pointer;
+	width: 41px;
+}
+
+.div_minus {
+	margin-right: 22px;
+}
+
+.div_plus {
+	margin-left: 22px;
+}
+
+
+.page_q3 {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page_q3 div {
+	display: inline-block;
+}
+
+
+input[type=submit] {
+	text-align: center;
+}
+
+.page_q3 input[type="number"] {
+	height: 91px;
+	width: 110px;
+	color: #464356;
+	font-family: "Source Sans Pro";
+	font-size: 82px;
+	font-weight: 600;
+	text-align: center;
+	border: none;
+	border-bottom: 2px solid #464356;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    -webkit-border-radius: 0; 
+    border-radius: 0;
+    padding: 0;
+}
