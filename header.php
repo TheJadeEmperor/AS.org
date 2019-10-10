@@ -31,8 +31,23 @@ if($_GET['debug'] == 1)
 
 
 ///////////////////////////////////////////////////////////////
-$api_url = "https://api-qa.drugfree.org/jsonWeb.asmx/H19989";
+
 $home_url = home_url( $path, $scheme );
+
+// The host name, without protocol, for the QA environment
+$qa_host = "qa.alcoholscreening.org";
+
+// The HTTP_HOST should match the qa_host exactly
+if( substr($_SERVER["HTTP_HOST"], 0, strlen($qa_host)) === $qa_host) {
+	// API for QA
+	$api_url = 'https://api.drugfree.org/jsonWeb.asmx/H19989';
+} 
+else {
+	// API for prod
+	$api_url = 'https://api-qa.drugfree.org/jsonWeb.asmx/H19989';
+} 
+
+//echo $api_url.' '.$_SERVER["HTTP_HOST"];
 ///////////////////////////////////////////////////////////////
 
 $image_my_results = get_field("image_my_results", "option");
@@ -72,7 +87,7 @@ else if ($current_slug == 'page-plan' || $current_slug == 'page-study' || $curre
 	</div>
 	<div class="clear"></div>
 	<div class="line"></div>
-';
+	';
 	
 }
 
