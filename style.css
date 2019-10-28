@@ -75,10 +75,17 @@ p {
 	margin-top: 0px;
 }
 
+.main_container {
+	min-height: 100vh;
+	padding-bottom: 103px; /* height of your footer */
+}
+
 .as_footer {
 	height: 103px;
 	padding: 15px;
 	background-color: #F2F2F0;
+	bottom: 0;
+	width: 100%;
 }
 
 .as_footer_text {
