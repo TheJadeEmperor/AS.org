@@ -125,7 +125,7 @@ $(document).ready(function() {
 		<input class="button_1_10" type="button" name="commit" value="7" />
 		<input class="button_1_10" type="button" name="commit" value="8" />
 		<input class="button_1_10" type="button" name="commit" value="9" />
-		<input class="button_1_10" type="button" name="commit" value="10" />
+		<input class="button_1_10 last_button" type="button" name="commit" value="10" />
 		
 		<div class="plan_commit_div">
 			<div class="plan_commit_1">Not at all</div>
