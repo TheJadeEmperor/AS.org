@@ -377,8 +377,8 @@ if($DPW > 0) {
 <form method="POST" action="<?=$nextPage?>">
 
 	<input type="hidden" name="DPW" value="<?=$DPW?>" />
-	<input type="hidden" name="risk" value="<?=$risk?>" />
-	<input type="hidden" name="percentile" value="<?=$percentile?>" />
+	<input type="hidden" name="p4" value="<?=$risk?>" />
+	<input type="hidden" name="p3" value="<?=$percentile?>" />
 
 	<a onclick="submitScreeningHome('page-plan')" href="<?=$nextPage?>"><button class="nextButton box_purple">NEXT STEPS</button></a>
 </form>
@@ -416,14 +416,7 @@ if($bingeCopy) {
 			"key": "DPW",
 			"value": DPW
 		},
-		{		
-			"key": "risk",
-			"value": risk
-		},
-		{		
-			"key": "percentile",
-			"value": percentile
-		}];
+		];
 		
 		console.log('submitScreeningHome dataArray: '+dataArray );
 		

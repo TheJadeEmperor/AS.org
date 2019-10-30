@@ -7,7 +7,7 @@ $keepVars = array(
 'p0', 'p1', 'button_next_page', 'button_previous_page',
 
 //risk calculation
-'sex', 'zipCode', 'age', 'binge', 'binge4', 'HDD', 'NDD', 'DDD', 'risk', 'percentile', 
+'sex', 'zipCode', 'age', 'binge', 'binge4', 'HDD', 'NDD', 'DDD', 'p4', 'p3',
 
 //Q1 to Q6
 'button_home', 'button_page_1a', 'button_page_1b', 'button_page_2', 'button_page_3','button_page_4', 'button_page_5', 'button_page_6',
@@ -20,7 +20,7 @@ foreach($keepVars as $vars) {
 	if(isset($_POST[$vars])) $_SESSION[$vars] = $_POST[$vars];
 }
 
-//default values 
+//default values to 0 
 $defaultZero = array('binge', 'binge4', 'HDD', 'NDD', 'DDD');
 foreach($defaultZero as $vars) {
 	if(!isset($_SESSION[$vars])) $_SESSION[$vars] = 0;
@@ -236,7 +236,7 @@ function submitASForm (dataArray) {
 	
 	console.log("p1: ", p1);
 
-	var p3 = "<?=$_SESSION['percentile']?>";
+	var p3 = "<?=$_SESSION['p3']?>";
 
 	if(p3 == "") {
 		p3 = -1; 
@@ -245,11 +245,12 @@ function submitASForm (dataArray) {
 	//add session vars to dataArray
 	<?php
 	foreach($_SESSION as $key => $val) {
-		echo '
-		dataArray.push({
-			"key": "'.$key.'",
-			"value": "'.$val.'" 
-		});	';
+		if($key != 'p3' && $key != 'p4') //don't need p3 and p4 again
+			echo '
+			dataArray.push({
+				"key": "'.$key.'",
+				"value": "'.$val.'" 
+			});	';
 	}
 	?>
 	
@@ -259,7 +260,7 @@ function submitASForm (dataArray) {
 	platform.p1 = p1; //login id
 	platform.p2 = p2; //status
 	platform.p3 = p3; //percentile
-	platform.p4 = "<?=$_SESSION['risk']?>"; 
+	platform.p4 = "<?=$_SESSION['p4']?>"; 
 	platform.p5 = "01"; //version number
 	platform.data = dataArray; 
 	
