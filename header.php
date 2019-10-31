@@ -4,29 +4,29 @@ session_start();
 $templateDir = get_bloginfo( 'template_directory' );
 
 $keepVars = array(
-'p0', 'p1', 'button_next_page', 'button_previous_page',
+'p0', 'p1', 'p3', 'p4', 'button_next_page', 'button_previous_page',
 
 //risk calculation
-'sex', 'zipCode', 'age', 'binge', 'binge4', 'HDD', 'NDD', 'DDD', 'p4', 'p3',
+'sex', 'zipCode', 'age', 'binge', 'binge4', 'HDD', 'NDD', 'DDD', 'DPW',
 
 //Q1 to Q6
 'button_home', 'button_page_1a', 'button_page_1b', 'button_page_2', 'button_page_3','button_page_4', 'button_page_5', 'button_page_6',
 
 //Page Plan
 'button_plan_choice', 'button_plan_value', 'commit',
-'button_page_results', 'button_page_study', 'button_page_quit', 'button_strat_reduce_drinking', 'button_strat_cutback', 'button_strat_alc_problem',  'button_strat_standards', 'button_strat_cutback_online_support', 'info_drinking_1',  'info_drinking_2', 'info_drinking_3', 'info_drinking_4' );
+'button_page_results', 'button_page_study', 'button_page_quit', 'button_strat_reduce_drinking', 'button_strat_cutback', 'button_strat_alc_problem', 'button_strat_standards', 'button_strat_cutback_online_support', 'info_drinking_1', 'info_drinking_2', 'info_drinking_3', 'info_drinking_4' );
 
 foreach($keepVars as $vars) {
 	if(isset($_POST[$vars])) $_SESSION[$vars] = $_POST[$vars];
 }
 
 //default values to 0 
-$defaultZero = array('binge', 'binge4', 'HDD', 'NDD', 'DDD');
+$defaultZero = array('binge', 'binge4', 'HDD', 'NDD', 'DDD', 'DPW');
 foreach($defaultZero as $vars) {
 	if(!isset($_SESSION[$vars])) $_SESSION[$vars] = 0;
 }
 
-if($_GET['debug'] == 1)
+//if($_GET['debug'] == 1)
 	print_r($_SESSION);
 
 
@@ -40,14 +40,13 @@ $qa_host = "qa.alcoholscreening.org";
 // The HTTP_HOST should match the qa_host exactly
 if( substr($_SERVER["HTTP_HOST"], 0, strlen($qa_host)) === $qa_host) {
 	// API for QA
-	$api_url = 'https://api.drugfree.org/jsonWeb.asmx/H19989';
+	$api_url = 'https://api-qa.drugfree.org/jsonWeb.asmx/H19989';
 } 
 else {
 	// API for prod
-	$api_url = 'https://api-qa.drugfree.org/jsonWeb.asmx/H19989';
+	$api_url = 'https://api.drugfree.org/jsonWeb.asmx/H19989';
 } 
 
-//echo $api_url.' '.$_SERVER["HTTP_HOST"];
 ///////////////////////////////////////////////////////////////
 
 $image_my_results = get_field("image_my_results", "option");
@@ -143,15 +142,13 @@ $nav_bar .= '</div>
 <!-- Mobile Menu - hidden -->	
 
 	<div id="mobileMenu">
-		<a href="./page-q1-a/">TAKE THE QUIZ</a>
-		<a href="./strategy-reduce-drinking/">RESOURCES</a>
-		<a href="./info-drinking-1/">STANDARD DRINK SIZES</a>
-		<a href="'.$home_url.'#aboutUs">ABOUT US</a>
+		<a href="./page-q1-a/" class="mobile_menu_item">TAKE THE QUIZ</a>
+		<a href="./strategy-reduce-drinking/" class="mobile_menu_item">RESOURCES</a>
+		<a href="./info-drinking-1/" class="mobile_menu_item">STANDARD DRINK SIZES</a>
+		<a href="'.$home_url.'#aboutUs" class="mobile_menu_item">ABOUT US</a>
 	</div>
-	
 ';
 
-//echo $nav_bar;
 
 
 //fake pop up pages
@@ -208,9 +205,7 @@ if (preg_match('~MSIE|Internet Explorer~i', $ua) || (strpos($ua, 'Trident/7.0') 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<?php wp_head(); ?>
-	
-	
-	
+		
 <script>
 
 
@@ -226,7 +221,7 @@ function submitASForm (dataArray) {
 
 	if (p1 == "") { //entry point to api 
 		p1 = Math.random().toString(36).substring(7);
-		console.log("random ", p1);
+		
 		$("#p1").val(p1);
 		console.log("Stage A p1: ", p1);
 	}
@@ -265,7 +260,9 @@ function submitASForm (dataArray) {
 	platform.data = dataArray; 
 	
 	var api_data = JSON.stringify(platform);
-	console.log('submitASForm dataArray: ' + dataArray + 'platform '+ api_data ); 
+	
+	//console.log('platform.DPW '+ platform.DPW ); 
+	console.log('api_data '+ api_data ); 
 	
 	$('.as_error').html( api_data ); 
 	
@@ -380,9 +377,9 @@ jQuery(document).ready(function(){
 <div class="container">
 
 <?php
-echo $main_display;
+	echo $main_display;
 
-echo $tab_both;
+	echo $tab_both;
 ?>
 
 <!--

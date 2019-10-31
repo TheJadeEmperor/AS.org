@@ -20,8 +20,6 @@ $home_number_people = get_field("home_number_people", $post->ID);
 
 $home_image_people = get_field("home_image_people", $post->ID);
 
-$api_url = "https://api-qa.drugfree.org/jsonWeb.asmx/H19989";
-
 
 ?>
 
@@ -51,9 +49,28 @@ $api_url = "https://api-qa.drugfree.org/jsonWeb.asmx/H19989";
 		console.log('submitScreeningHome dataArray: '+dataArray );
 		 
 		submitASForm (dataArray); 
-		
 	}
+	
+	//submit ASForm when clicking on menu items 
+	$( ".main_menu_item" ).click(function() {
+		event.preventDefault();
+		var href = $(this).find('a').attr('href');
+		
+		$( "#ASForm" ).attr('action', href);
+		$( "#ASForm" ).submit();
+		console.log( 'submit() ' + href );
+		
+	});
 
+	$( ".mobile_menu_item" ).click(function() {
+		event.preventDefault();
+		var href = $(this).find('a').attr('href');
+		
+		$( "#ASForm" ).attr('action', href);
+		$( "#ASForm" ).submit();
+		console.log( 'submit() ' + href );
+		
+	});
 </script>
 
 
