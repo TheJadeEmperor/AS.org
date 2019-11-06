@@ -26,7 +26,7 @@ foreach($defaultZero as $vars) {
 	if(!isset($_SESSION[$vars])) $_SESSION[$vars] = 0;
 }
 
-//if($_GET['debug'] == 1)
+if($_GET['debug'] == 1)
 	print_r($_SESSION);
 
 

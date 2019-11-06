@@ -100,6 +100,7 @@ if($sex == 'F' || ($sex == 'M' && $age >= 65)) {
 
 
 $drinkPercent = array (
+	'0' => array ( 'M' => 28, 'F' => 38 ),
 	'1' => array ( 'M' => 28, 'F' => 38 ),
 	'2' => array ( 'M' => 53, 'F' => 69 ),
 	'3' => array ( 'M' => 51, 'F' => 76 ),
@@ -405,18 +406,13 @@ if($bingeCopy) {
 	function submitScreeningHome (page) {
 
 		var DPW = $("#DPW").val();
-		var risk = $("#risk").val();
-		var percentile = $("#percentile").val();
+		
+		if(DPW == "") DPW = 0;
 		
 		dataArray = [{
 			"key": "button_page_results", 
 			"value": page 
-		},
-		{		
-			"key": "DPW",
-			"value": DPW
-		},
-		];
+		}];
 		
 		console.log('submitScreeningHome dataArray: '+dataArray );
 		
